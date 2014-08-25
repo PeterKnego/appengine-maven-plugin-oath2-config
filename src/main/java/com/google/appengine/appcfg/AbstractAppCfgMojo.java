@@ -350,19 +350,19 @@ public abstract class AbstractAppCfgMojo extends AbstractMojo {
 		}
 
 		if (oauth2ConfigFile != null) {
-			arguments.add("--oauth2_config_file");
+			arguments.add("--oauth2_config_file="+oauth2ConfigFile);
 		}
 
 		if (oauth2ClientId != null) {
-			arguments.add("--oauth2_client_id");
+			arguments.add("--oauth2_client_id="+oauth2ClientId);
 		}
 
 		if (oauth2ClientSecret != null) {
-			arguments.add("--oauth2_client_secret");
+			arguments.add("--oauth2_client_secret="+oauth2ClientSecret);
 		}
 
 		if (oauth2RefreshToken != null) {
-			arguments.add("--oauth2_refresh_token");
+			arguments.add("--oauth2_refresh_token="+oauth2RefreshToken);
 		}
 
 		if (enableJarSplitting) {

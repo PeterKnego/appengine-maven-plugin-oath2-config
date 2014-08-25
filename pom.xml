@@ -24,11 +24,6 @@
         <maven>3.1.0</maven>
     </prerequisites>
 
-    <scm>
-        <connection>scm:git:https://code.google.com/p/appengine-maven-plugin/</connection>
-      <tag>HEAD</tag>
-  </scm>
-
     <developers>
         <developer>
             <id>rrch</id>
@@ -62,14 +57,14 @@
 
     <distributionManagement>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus Staging</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>idd-nexus</id>
+            <name>Internal Releases</name>
+            <url>http://nexus.iddiction.com/content/repositories/rel/</url>
         </repository>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
+            <id>idd-nexus</id>
+            <name>Internal Snapshots</name>
+            <url>http://nexus.iddiction.com/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
